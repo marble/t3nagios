@@ -1,0 +1,2 @@
+# TYPO3 Extension: Nagios (nagios)
+# TypoScript: Constants

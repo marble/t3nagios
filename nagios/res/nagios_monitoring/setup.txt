@@ -1,0 +1,27 @@
+# TYPO3 Extension: Nagios (nagios)
+# TypoScript: Setup
+
+config >
+config {
+  disableAllHeaderCode = 1
+  no_cache = 1
+  disablePrefixComment = 1
+  additionalHeaders = Content-Type: text/plain | Expires: Sat, 01 Jan 2011 00:00:00 UTC
+}
+
+tt_content.stdWrap.innerWrap >
+
+page >
+page = PAGE
+page.typeNum = 0
+#page.10 = USER
+#page.10.userFunc = tx_nagios_pi1->main
+
+page.10 = CONTENT
+page.10 {
+	table = tt_content
+	select.orderBy = sorting
+	select.where = colPos = 0
+	select.languageField = sys_language_uid
+}
+

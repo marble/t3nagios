@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<!--
+/***************************************************************
+*  Copyright notice
+*
+*  (c) 2010-2012 Michael Schams <schams.net>
+*  All rights reserved
+*
+*  This script is part of the TYPO3 project. The TYPO3 project is
+*  free software; you can redistribute it and/or modify
+*  it under the terms of the GNU General Public License as published by
+*  the Free Software Foundation; either version 2 of the License, or
+*  (at your option) any later version.
+*
+*  The GNU General Public License can be found at
+*  http://www.gnu.org/copyleft/gpl.html
+*
+*  This script is distributed in the hope that it will be useful,
+*  but WITHOUT ANY WARRANTY; without even the implied warranty of
+*  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*  GNU General Public License for more details.
+*
+*  This copyright notice MUST APPEAR in all copies of the script!
+***************************************************************/
+*
+* TYPO3 language file for the 'nagios' extension.
+*
+* @author		Michael Schams <schams.net>
+* @package		TYPO3
+* @subpackage	tx_nagios
+*
+-->
+<T3locallang>
+	<meta type="array">
+		<description>language labels for TYPO3 Nagios extension</description>
+		<type>database</type>
+		<csh_table></csh_table>
+		<fileId>EXT:nagios/locallang_tca.xml</fileId>
+		<labelContext type="array">
+		</labelContext>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="nagios">Nagios Monitoring (http://schams.net/nagios)</label>
+			<label index="nagios.sheet_title.general_settings">General Settings</label>
+			<label index="nagios.sheet_title.security_settings">Security Settings</label>
+			<label index="nagios.sheet_title.about">About TYPO3 Nagios(R) Plugin</label>
+			<label index="nagios.feature.label.typo3_version">Include TYPO3 version in output</label>
+			<label index="nagios.feature.label.php_version">Include PHP version in output</label>
+			<label index="nagios.feature.label.extensions">Include list of TYPO3 extensions and their versions in output</label>
+			<label index="nagios.feature.label.extensiondependencytypo3">Include TYPO3 dependency warnings for extensions in output</label>
+			<label index="nagios.feature.label.databasetables">Include amount of database tables in output</label>
+			<label index="nagios.feature.label.databaseprocesslist">Include amount of database processes in output</label>
+			<label index="nagios.feature.label.timestamp">Include current timestamp and timezone (server settings) in output</label>
+			<label index="nagios.feature.label.deprecationlog">Include status of deprecation log in output</label>
+			<label index="nagios.feature.label.donationnotice">Include status of donation notice popup in output</label>
+			<label index="nagios.feature.label.diskusage">Include the size of current disk usage in output (requires UNIX/Linux system)</label>
+			<label index="nagios.feature.label.sitename">Include TYPO3 site name in output</label>
+			<label index="nagios.feature.label.servername">Include server name or HTTP host name in output</label>
+			<label index="nagios.feature.label.reports">Include results of system reports in output (requires system extension "reports")</label>
+			<label index="nagios.label.reports_note">Hint:</label>
+
+			<!-- <label index="nagios.security.label.nagios_servers">Comma separated list of IP addresses of Nagios(R) servers allowed to retrieve information about this TYPO3 instance (specify the IP address of the Nagios server - and the Nagios server ONLY):</label> -->
+			<label index="nagios.security.label.nagios_servers">IP addresses of Nagios(R) servers:</label>
+			<label index="nagios.security.label.supress_header">Supress header line (TYPO3 Nagios(R) Extension and version) in output</label>
+			
+			<label index="nagios.befunc.adminwarning.test">Misconfiguration of Nagios TYPO3 Monitoring detected: please specify the IP address of the Nagios server (and the Nagios server ONLY) in the extension configuration. The current list of Nagios servers is incomplete, invalid or allows everyone to access the output of the extension.</label>
+
+			<label index="nagios.feature.label.debug_mode">DEBUG MODE</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="nagios">Nagios Monitoring (http://schams.net/nagios)</label>
+			<label index="nagios.sheet_title.general_settings">Allgemeine Einstellungen</label>
+			<label index="nagios.sheet_title.security_settings">Sicherheitseinstellungen</label>
+			<label index="nagios.sheet_title.about">Über TYPO3 Nagios(R) Plugin</label>
+			<label index="nagios.label.reports_note">Tipp:</label>
+		</languageKey>
+	</data>
+</T3locallang>
